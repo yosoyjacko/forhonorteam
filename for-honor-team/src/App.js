@@ -1,15 +1,17 @@
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux'
+import Players from './components/Players'
+import SelectedTeam from './components/SelectedTeam'
 import store from './store'
+import './styles/styles.scss'
 
-
-const App = () => {
+const App = () => (
   <Provider store={store}>
     <main>
-      <h1>For Honor</h1>
+      <h1>For Honor Team</h1>
       <Players />
-      <TeamSelected />
+      <SelectedTeam />
     </main>
   </Provider>
-}
+)
 
 export default App;
